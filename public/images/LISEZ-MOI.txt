@@ -1,0 +1,11 @@
+PHOTOS A AJOUTER (format .jpg, noms exacts) :
+
+public/images/hero.jpg                          grande photo du haut de page, 1920x1080, moins de 400 Ko
+public/images/services/immigration.jpg          800x600, moins de 120 Ko
+public/images/services/cours-de-langues.jpg     800x600
+public/images/services/placement.jpg            800x600
+public/images/services/puits-et-amenagement.jpg 800x600
+public/images/services/immobilier.jpg           800x600
+public/images/services/auto-ecole.jpg           800x600
+
+Tant qu'une photo manque, le site affiche un fond bleu nuit a la place.
