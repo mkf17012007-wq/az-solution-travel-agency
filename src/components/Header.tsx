@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
 import { navLinks } from "@/content/home";
@@ -13,13 +14,23 @@ import {
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   const close = () => setOpen(false);
+  const linkHref = (href: string) => {
+    if (href === "#contact") {
+      return "#contact";
+    }
+    if (href.startsWith("#")) {
+      return pathname === "/" ? href : `/${href}`;
+    }
+    return href;
+  };
 
   return (
     <header className="site-header" id="top">
       <div className="header-main">
         <div className="container header-main__inner">
-          <a className="brand" href="#top" aria-label={`${siteConfig.name} — accueil`}>
+          <a className="brand" href={linkHref("#top")} aria-label={`${siteConfig.name} — accueil`}>
             <Image
               className="brand__logo"
               src={siteConfig.logo}
@@ -36,14 +47,14 @@ export function Header() {
 
           <nav className="nav nav--desktop" aria-label="Navigation principale">
             {navLinks.map((link) => (
-              <a key={link.href} className="nav__link" href={link.href}>
+              <a key={link.href} className="nav__link" href={linkHref(link.href)}>
                 {link.label}
               </a>
             ))}
           </nav>
 
           <div className="header-actions">
-            <a className="btn btn--primary btn--sm header-cta" href="#contact">
+            <a className="btn btn--primary btn--sm header-cta" href={linkHref("#contact")}>
               Prendre contact
               <ArrowRightIcon size={16} />
             </a>
@@ -71,7 +82,7 @@ export function Header() {
             <a
               key={link.href}
               className="mobile-menu__link"
-              href={link.href}
+              href={linkHref(link.href)}
               onClick={close}
             >
               {link.label}
@@ -79,7 +90,7 @@ export function Header() {
           ))}
         </nav>
         <div className="mobile-menu__actions">
-          <a className="btn btn--primary btn--block" href="#contact" onClick={close}>
+          <a className="btn btn--primary btn--block" href={linkHref("#contact")} onClick={close}>
             Prendre contact
           </a>
           <a

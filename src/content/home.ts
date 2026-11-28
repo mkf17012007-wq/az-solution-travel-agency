@@ -25,7 +25,7 @@ export const services: Service[] = [
     description:
       "Visas long et court séjour, assistance, billetterie et accompagnement jusqu'à l'installation.",
     icon: "plane",
-    href: "#contact",
+    href: "/services/immigration",
     featured: true
   },
   {
@@ -34,7 +34,7 @@ export const services: Service[] = [
     description:
       "Français, anglais, allemand, italien et préparation aux tests de langue.",
     icon: "globe",
-    href: "#contact"
+    href: "/services/cours-de-langues"
   },
   {
     slug: "placement",
@@ -42,7 +42,7 @@ export const services: Service[] = [
     description:
       "Mise en relation entre entreprises à la recherche de profils et candidats qualifiés.",
     icon: "users",
-    href: "#contact"
+    href: "/services/placement"
   },
   {
     slug: "puits-et-amenagement",
@@ -50,7 +50,7 @@ export const services: Service[] = [
     description:
       "Réalisation de puits et travaux d'aménagement pour particuliers et entreprises.",
     icon: "droplet",
-    href: "#contact"
+    href: "/services/puits-et-amenagement"
   },
   {
     slug: "immobilier",
@@ -58,7 +58,7 @@ export const services: Service[] = [
     description:
       "Location et achat de biens avec un accompagnement personnalisé de bout en bout.",
     icon: "home",
-    href: "#contact"
+    href: "/services/immobilier"
   },
   {
     slug: "auto-ecole",
@@ -66,7 +66,7 @@ export const services: Service[] = [
     description:
       "Formation complète de conducteurs, de l'apprentissage au passage du permis.",
     icon: "car",
-    href: "#contact"
+    href: "/services/auto-ecole"
   }
 ];
 
@@ -175,9 +175,9 @@ export type NavLink = {
 };
 
 export const navLinks: NavLink[] = [
-  { label: "Accueil", href: "#top" },
-  { label: "Services", href: "#services" },
-  { label: "À propos", href: "#apropos" },
-  { label: "Témoignages", href: "#temoignages" },
-  { label: "Contact", href: "#contact" }
+  { label: "Accueil", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "À propos", href: "/a-propos" },
+  { label: "Témoignages", href: "/temoignages" },
+  { label: "Contact", href: "/contact" }
 ];

@@ -49,24 +49,25 @@ Sections (cf. CDC §4) :
 
 ---
 
-## Phase 3 — Pages services
-- [ ] Immigration : vue d'ensemble, visas long/court séjour, étapes, services associés.
-- [ ] Sous-pages : Visa études, Visa travail, Visa visiteur & court séjour.
-- [ ] Cours de langues : langues, niveaux, tests préparés, horaires, tarifs.
-- [ ] Placement de personnel : volet entreprises, volet candidats, secteurs, méthode.
-- [ ] Puits et aménagement : types de travaux, réalisations, méthode, devis.
-- [ ] Immobilier : location/achat, services, étapes, zones.
-- [ ] Auto-école : formation, véhicule, déroulement, tarifs.
+## Phase 3 — Pages services (TERMINÉE)
+- [x] Immigration : vue d'ensemble, visas long/court séjour, étapes, services associés.
+- [x] Sous-pages : Visa études, Visa travail, Visa visiteur & court séjour.
+- [x] Cours de langues : langues, niveaux, tests préparés, horaires, tarifs.
+- [x] Placement de personnel : volet entreprises, volet candidats, secteurs, méthode.
+- [x] Puits et aménagement : types de travaux, méthode, devis (réalisations en attente de photos client).
+- [x] Immobilier : location/achat, services, étapes, zones.
+- [x] Auto-école : formation, véhicule, déroulement, tarifs.
 
 **Acceptation :** chaque page a un CTA dédié et des métadonnées propres.
 
 ---
 
-## Phase 4 — Pages institutionnelles & conversion
-- [ ] À propos (histoire depuis 2022, fondateur, équipe, traitement de dossier).
-- [ ] Témoignages (affichage en cartes, filtre par service).
-- [ ] Contact (formulaire, coordonnées, horaires, plan, réseaux).
-- [ ] Mentions légales & politique de confidentialité.
+## Phase 4 — Pages institutionnelles & conversion (EN COURS)
+- [x] À propos (histoire depuis 2022, fondateur, équipe, traitement de dossier).
+- [x] Témoignages (cartes texte + emplacements photos/vidéos ; filtre par service à ajouter).
+- [x] Contact (photo équipe à fournir, formulaire avec services + créneau, coordonnées, horaires).
+- [ ] Mentions légales & politique de confidentialité (textes client à fournir).
+- [ ] Carte Google Maps et réseaux sociaux (informations client à fournir).
 
 **Acceptation :** parcours de contact complet et lisible.
 

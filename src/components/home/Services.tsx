@@ -42,7 +42,7 @@ export function Services() {
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
                   <a className="service-card__link" href={service.href}>
-                    Demander des informations
+                    Découvrir le service
                     <ArrowRightIcon size={16} />
                   </a>
                 </div>

@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container site-footer__grid">
         <div className="site-footer__brand">
-          <a className="brand brand--footer" href="#top" aria-label={`${siteConfig.name} — accueil`}>
+          <a className="brand brand--footer" href="/#top" aria-label={`${siteConfig.name} — accueil`}>
             <Image
               className="brand__logo"
               src={siteConfig.logo}
@@ -63,10 +63,9 @@ export function Footer() {
         <div className="site-footer__col">
           <h3>Entreprise</h3>
           <ul>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#temoignages">Témoignages</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Mentions légales</a></li>
+            <li><a href="/a-propos">À propos</a></li>
+            <li><a href="/temoignages">Témoignages</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
@@ -109,10 +108,6 @@ export function Footer() {
         <div className="container site-footer__legal-inner">
           <span>
             © {year} {siteConfig.legalName}. Tous droits réservés.
-          </span>
-          <span className="site-footer__legal-links">
-            <a href="#contact">Mentions légales</a>
-            <a href="#contact">Politique de confidentialité</a>
           </span>
         </div>
       </div>
